@@ -1,0 +1,18 @@
+{
+    "name": "uberclone-authserver",
+    "version": "1.0.0",
+    "description": "uber clone for learning node and react",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js",
+        "deploy-to-now": "now -e APP_ID=@pusher_app_id -e APP_KEY=@pusher_app_key -e APP_SECRET=@pusher_app_secret"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "dotenv": "^4.0.0",
+        "express": "^4.15.3",
+        "pusher": "^5.2.0"
+    }
+}
