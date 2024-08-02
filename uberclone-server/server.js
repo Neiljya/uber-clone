@@ -14,7 +14,7 @@ var pusher = new Pusher({ // pusher
 });
 
 app.get('/', function(req, res){ // server is running
-  res.send('all is well...');
+  res.send('chilling');
 });
 
 // authenticating users, request from script
