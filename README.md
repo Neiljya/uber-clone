@@ -38,7 +38,7 @@ react-native-maps
 react-native-loading-spinner-overlay
 
 There are a few more imports compared to the driver-side app, because there are some specific things from react, such as the spinner, that improves the aesthetic experience of the passenger app.
-The bookride method opens Google Place Picker for the user to select a destination. It also sends a request to any available driver through the available driver channel.
+The bookride method opens Google Place Picker for the user to select a destination. It also sends a request to any available driver through the available driver channel. The passenger may cancel the ride by cancelling the selection of a destination. This sends a response to the driverside, which redirects the response to say that the passenger has found another driver, in other words, cancelled the initial ride.
 The setcurrentlocation method gets the current location of the passenger and updates the state for the purpose of the map pointer display.
 The componentdidmount method establishes pusher connections and handles requests for ride requests, driver responses, and location updates based on the ride. In particular, the app merges the passenger and driver's locations during the ride to ensure a smooth and clean interface in the app.
 The render method renders UI components including the header, booking button, loading spinner, map, and markers for passenger and driver locations.
